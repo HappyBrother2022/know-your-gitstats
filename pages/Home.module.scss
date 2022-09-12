@@ -1,0 +1,72 @@
+@import "../utils/theme";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  background-image: linear-gradient($black 0%, $darkGrey 100%);
+  color: #f6f8fa;
+  height: 100vh;
+
+  form {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2em;
+    margin-bottom: 20vh;
+    max-width: 600px;
+    text-align: center;
+
+    svg {
+      color: $svgColor;
+      font-size: 5em;
+    }
+
+    span {
+      background: #303c4a;
+      padding: 0.5em 1em;
+      font-family: $mono;
+      color: $offBlue;
+      border-radius: 6px;
+    }
+
+    label {
+      display: block;
+      font-size: 2.5em;
+      font-weight: 500;
+      margin: 2rem;
+
+      @media screen and (max-width: 578px) {
+        margin: 2rem 0;
+        font-size: 1.8em;
+      }
+    }
+
+    input {
+      background-color: #26303c;
+      outline: 0;
+      // border: 0;
+      border-radius: 0.25em;
+      width: 100%;
+      max-width: 500px;
+      margin: 1em auto;
+      padding: 1rem;
+      border: 10px solid;
+      border-image-slice: 1 !important;
+      border-width: 4px;
+      border-image-source: linear-gradient(to left, $purple, $svgColor);
+      color: #c8e1ff75;
+      font-family: $mono;
+      font-size: 2em;
+      font-weight: 400;
+      text-align: center;
+
+      &:focus {
+        color: $offBlue;
+      }
+      &[type="text"] {
+        text-transform: lowercase;
+      }
+    }
+  }
+}

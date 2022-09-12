@@ -1,0 +1,23 @@
+@import "../utils/theme";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 5em;
+  color: #fff;
+  background-color: #27292d;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+
+  a {
+    padding: 5px;
+    color: $svgColor;
+    font-family: $mono;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
